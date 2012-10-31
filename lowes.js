@@ -2,10 +2,28 @@ var scraper = require('scraper');
 var fs = require("fs");
 var output = "";
 var records = [];
+
+var departments = {
+  'building_supplies':'http://www.lowes.com/Building-Supplies/_/N-1z13cih/pc',
+  'hardware':'http://www.lowes.com/Hardware/_/N-1z13cne/pc',
+  'plumbing':'http://www.lowes.com/Plumbing/_/N-1z13dr7/pc',
+  'tools':'http://www.lowes.com/Tools/_/N-1z13e72/pc',
+  'paint':'http://www.lowes.com/Paint/_/N-1z0yyfe/pc',
+  'flooring':'http://www.lowes.com/Flooring/_/N-1z13ckl/pc',
+  'bathroom':'http://www.lowes.com/Bathroom/_/N-1z0z4ih/pl',
+  'cleaning':'http://www.lowes.com/Cleaning-Organization/_/N-1z13eb4/pc',
+  'lawncare':'http://www.lowes.com/Lawn-Care-Landscaping/_/N-1z13dw5/pl'
+}
+var startCategory = 'hardware';
+
+if(process.argv[2]) {
+startCategory = process.argv[2];  
+}
+
 var dateFormat = require("dateformat");
 var _ = require("underscore");
 var now = new Date();
-var outputFile = "./output_" + dateFormat(now,"yyyymmdd_hhMMss") + ".csv";
+var outputFile = "./output_" + startCategory + "_" + dateFormat(now,"yyyymmdd_hhMMss") + ".csv";
 
 process.on('uncaughtException', function (err) {
   console.log('Caught exception: ' + err);
@@ -27,7 +45,12 @@ function goScrape(theUrl) {
             $("#left_rail .cat_nav li a,#left_rail_pl .categories li a").each(function() {
               var item = {};
               item.link = 'http://www.lowes.com' + $(this).attr('href');
-              item.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'');
+              if($(this).text()) {
+                item.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
+              } else {
+                item.text = '';
+              }
+
               item.path = [];
 
               $("#breadcrumbs li").each(function() {
@@ -55,7 +78,13 @@ function goScrape(theUrl) {
             $("#left_rail_pl .expandable > li > a").each(function() {
               var item = {};
               item.link = 'http://www.lowes.com' + $(this).attr('href');
-              item.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
+              
+              if($(this).text()) {
+                item.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
+              } else {
+                item.text = '';
+              }
+
               item.path = [];
 
               if(!new RegExp("(rating|price|brand)", "gi").test(item.text)) {
@@ -84,8 +113,13 @@ function goScrape(theUrl) {
                 $(this).next('ul').find('li a').each(function() {
                   var subitem = {};
                   subitem.link = 'http://www.lowes.com' + $(this).attr('href');
+                  
+                  if($(this).text()) {
+                    subitem.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
+                  }  else {
+                    subitem.text = '';
+                  }
 
-                  subitem.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
                   subitem.path = _.clone(item.path);
 
                   subitem.path.push(subitem.text);
@@ -97,8 +131,6 @@ function goScrape(theUrl) {
               }
             });
           }
-
-          
         } catch (err) {
           console.log(err);
         }
@@ -111,12 +143,12 @@ reqPerSec: 0.2
 };
 
 function writeOutput(item) {
-  var output = [item.type.trim(),item.text.trim(),item.path.join(":"),item.link.trim()]
+  var output = [item.type.trim(),item.text.trim(),item.path.join(":").replace('Home:',''),item.link.trim()]
 
   fs.appendFileSync(outputFile,output + '\n','utf8');
 }
 
-goScrape('http://www.lowes.com/Hardware/Cabinet-Hardware/_/N-1z0zzau/pl?Ns=p_product_avg_rating|1');
+goScrape(departments[startCategory]);
 
 
 
