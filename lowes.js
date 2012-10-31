@@ -30,6 +30,7 @@ process.on('uncaughtException', function (err) {
 });
 
 function goScrape(theUrl) {
+  console.log("-----------\n" + theUrl + "\n...");
   scraper(
     {
        'uri': theUrl
