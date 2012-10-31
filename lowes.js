@@ -31,32 +31,68 @@ process.on('uncaughtException', function (err) {
 function goScrape(Url,cb) {
   var scrapeCb = cb;
   var theUrl = Url;
+
   if(records.indexOf(theUrl) > -1) {
     return;
   };
+
   console.log("Processing\t" + theUrl.replace('http://www.lowes.com','').substr(0,50) + "...");
+
   scraper(
     {
-       'uri': theUrl
-           , 'headers': {
-               'User-Agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)'
-           }
-    }
-    ,function(err, $) {
-        if (err) {throw err}
-        
-        try {
-          if($("#left_rail,#left_rail_pl")) {
-            $("#left_rail .cat_nav li a,#left_rail_pl .categories li a").each(function() {
-              var item = {};
-              item.link = 'http://www.lowes.com' + $(this).attr('href');
-              
+      'uri': theUrl,
+      'headers': {
+          'User-Agent': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)'
+      }
+    },
+    function(err, $) {
+      if (err) { throw err };
+      
+      try {
+        if($("#left_rail,#left_rail_pl")) {
+          $("#left_rail .cat_nav li a,#left_rail_pl .categories li a").each(function() {
+            var item = {};
+            item.link = 'http://www.lowes.com' + $(this).attr('href');
+            item.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
+            item.type = "category";
+            item.path = [];
+
+            $("#breadcrumbs li").each(function() {
+              var crumbText = "";
+              crumbText = $(this).find('a').text().trim();
+
+              if(crumbText.length == 0) {
+                crumbText = $(this).text().trim();
+              }
+
+              item.path.push(crumbText);
+            });
+
+            item.path.push(item.text);
+
+            writeOutput(item);
+
+            process.nextTick(function() {
+                goScrape(item.link,function() {
+                  console.log("Completed\t" + item.path.join(":"));
+                  item = null;
+                }); 
+            });
+          });
+
+          $("#left_rail_pl .expandable > li > a").each(function() {
+            var item = {};
+            item.link = 'http://www.lowes.com' + $(this).attr('href');
+            
+            if($(this).text()) {
               item.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
-              
-              item.type = "category";
-              item.path = [];
+            } else {
+              item.text = '';
+            }
 
+            item.path = [];
 
+            if(!new RegExp("(rating|price|brand)", "gi").test(item.text)) {
               $("#breadcrumbs li").each(function() {
                 var crumbText = "";
                 crumbText = $(this).find('a').text().trim();
@@ -65,77 +101,50 @@ function goScrape(Url,cb) {
                   crumbText = $(this).text().trim();
                 }
 
-                item.path.push(crumbText);
+                if(crumbText.length > 0) {
+                  item.path.push(crumbText);
+                }
               });
 
               item.path.push(item.text);
 
+              item.type = "filter_group";
+
               writeOutput(item);
 
-              process.nextTick(function() {
-                  goScrape(item.link);     
+              //list filters
+              $(this).next('ul').find('li a').each(function() {
+                var subitem = {};
+                subitem.link = 'http://www.lowes.com' + $(this).attr('href');
+                
+                subitem.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
+
+                subitem.path = _.clone(item.path);
+
+                subitem.path.push(subitem.text);
+                subitem.type = "filter";
+
+                writeOutput(subitem);
               });
-            });
-
-            $("#left_rail_pl .expandable > li > a").each(function() {
-              var item = {};
-              item.link = 'http://www.lowes.com' + $(this).attr('href');
-              
-              if($(this).text()) {
-                item.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
-              } else {
-                item.text = '';
-              }
-
-              item.path = [];
-
-              if(!new RegExp("(rating|price|brand)", "gi").test(item.text)) {
-                $("#breadcrumbs li").each(function() {
-                  var crumbText = "";
-                  crumbText = $(this).find('a').text().trim();
-
-                  if(crumbText.length == 0) {
-                    crumbText = $(this).text().trim();
-                  }
-
-                  if(crumbText.length > 0) {
-                    item.path.push(crumbText);
-                  }
-                });
-
-                item.path.push(item.text);
-
-                item.type = "filter_group";
-
-                writeOutput(item);
-
-                //list filters
-                $(this).next('ul').find('li a').each(function() {
-                  var subitem = {};
-                  subitem.link = 'http://www.lowes.com' + $(this).attr('href');
-                  
-                  subitem.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
-
-                  subitem.path = _.clone(item.path);
-
-                  subitem.path.push(subitem.text);
-                  subitem.type = "filter";
-
-                  writeOutput(subitem);
-                });
-              }
-            });
-          }
-
-          scrapeCb();
-        } catch (err) {
-          console.log(err);
-          scrapeCb(err);
+            }
+          });
         }
-    }
-    ,
+
+        scrapeCb();
+
+
+        writeOutput = null;
+        $ = null;
+      } catch (err) {
+        console.log(err);
+
+        scrapeCb(err);
+        writeOutput = null;
+        $ = null;
+      }
+    },
     {
-reqPerSec: 0.2
+      reqPerSec: 0.2
     }
 );
 
@@ -152,7 +161,7 @@ reqPerSec: 0.2
 };
 
 goScrape(departments[startCategory],function() {
-  console.log('Done.');
+  console.log('Completed.');
 });
 
 
