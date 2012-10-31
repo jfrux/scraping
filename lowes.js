@@ -2,7 +2,6 @@ var scraper = require('scraper');
 var fs = require("fs");
 var output = "";
 var records = [];
-
 var departments = {
   'building_supplies':'http://www.lowes.com/Building-Supplies/_/N-1z13cih/pc',
   'hardware':'http://www.lowes.com/Hardware/_/N-1z13cne/pc',
@@ -29,8 +28,13 @@ process.on('uncaughtException', function (err) {
   console.log('Caught exception: ' + err);
 });
 
-function goScrape(theUrl) {
-  console.log("-----------\n" + theUrl + "\n...");
+function goScrape(Url,cb) {
+  var scrapeCb = cb;
+  var theUrl = Url;
+  if(records.indexOf(theUrl) > -1) {
+    return;
+  };
+  console.log("Processing\t" + theUrl.replace('http://www.lowes.com','').substr(0,50) + "...");
   scraper(
     {
        'uri': theUrl
@@ -46,13 +50,12 @@ function goScrape(theUrl) {
             $("#left_rail .cat_nav li a,#left_rail_pl .categories li a").each(function() {
               var item = {};
               item.link = 'http://www.lowes.com' + $(this).attr('href');
-              if($(this).text()) {
-                item.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
-              } else {
-                item.text = '';
-              }
-
+              
+              item.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
+              
+              item.type = "category";
               item.path = [];
+
 
               $("#breadcrumbs li").each(function() {
                 var crumbText = "";
@@ -62,13 +65,11 @@ function goScrape(theUrl) {
                   crumbText = $(this).text().trim();
                 }
 
-                if(crumbText.length > 0) {
-                  item.path.push(crumbText);
-                }
+                item.path.push(crumbText);
               });
 
-              item.type = "category";
-              console.log(item);
+              item.path.push(item.text);
+
               writeOutput(item);
 
               process.nextTick(function() {
@@ -104,9 +105,7 @@ function goScrape(theUrl) {
 
                 item.path.push(item.text);
 
-
-
-                item.type = "filter";
+                item.type = "filter_group";
 
                 writeOutput(item);
 
@@ -115,16 +114,11 @@ function goScrape(theUrl) {
                   var subitem = {};
                   subitem.link = 'http://www.lowes.com' + $(this).attr('href');
                   
-                  if($(this).text()) {
-                    subitem.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
-                  }  else {
-                    subitem.text = '';
-                  }
+                  subitem.text = $(this).text().replace(new RegExp("\\(([0-9]+)\\)", "gi"),'').trim();
 
                   subitem.path = _.clone(item.path);
 
                   subitem.path.push(subitem.text);
-
                   subitem.type = "filter";
 
                   writeOutput(subitem);
@@ -132,8 +126,11 @@ function goScrape(theUrl) {
               }
             });
           }
+
+          scrapeCb();
         } catch (err) {
           console.log(err);
+          scrapeCb(err);
         }
     }
     ,
@@ -141,15 +138,22 @@ function goScrape(theUrl) {
 reqPerSec: 0.2
     }
 );
+
+
+  function writeOutput(item) {
+    var itemPath = item.path.join(":").replace('Home:','');
+    var output = [item.type.trim(),item.text.trim(),itemPath,item.link.trim()]
+    
+    records.push(theUrl);
+
+    console.log("Writing\t\t" + itemPath);
+    fs.appendFileSync(outputFile,output + '\n','utf8');
+  }
 };
 
-function writeOutput(item) {
-  var output = [item.type.trim(),item.text.trim(),item.path.join(":").replace('Home:',''),item.link.trim()]
-
-  fs.appendFileSync(outputFile,output + '\n','utf8');
-}
-
-goScrape(departments[startCategory]);
+goScrape(departments[startCategory],function() {
+  console.log('Done.');
+});
 
 
 
