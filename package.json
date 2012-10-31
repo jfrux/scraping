@@ -1,0 +1,10 @@
+{
+	"name":"node-scraping-test",
+	"version":"0.0.0",
+	"dependencies":{
+		"async":"",
+		"scraper":"",
+		"dateformat":"",
+		"underscore":""
+	}
+}
