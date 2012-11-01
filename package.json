@@ -5,6 +5,7 @@
 		"async":"",
 		"scraper":"",
 		"dateformat":"",
-		"underscore":""
+		"underscore":"",
+		"mysql":"2.0.0-alpha3"
 	}
 }
