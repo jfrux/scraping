@@ -13,7 +13,6 @@ var departments = {
   'plumbing':'http://www.lowes.com/Plumbing/_/N-1z13dr7/pc',
   'tools':'http://www.lowes.com/Tools/_/N-1z13e72/pc',
   'flooring':'http://www.lowes.com/Flooring/_/N-1z13ckl/pc',
-  
   'heatingcooling':'http://www.lowes.com/Heating-Cooling/_/N-1z13cpa/pc',
   'decor':'http://www.lowes.com/Home-Decor/_/N-1z13dfg/pc',
   'outdoorsliving':'http://www.lowes.com/Outdoor-Living/_/N-1z13ehd/pc',
@@ -182,10 +181,11 @@ function goScrape(Url,cb) {
   }
 };
 
-goScrape(departments[startCategory],function() {
-  console.log('Completed.');
-});
-
-
+//loops through them all now
+for(key in Object.keys(departments)) {
+  goScrape(departments[startCategory],function() {
+    console.log('Completed.');
+  });
+}
 
 
