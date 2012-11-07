@@ -1,11 +1,12 @@
 var fs = require("fs");
-
-fs.readdir(path, function(err,files) {
+var path = require("path");
+fs.readdir('./data', function(err,files) {
 	if (err) throw err;
-
-	for(file in files) {
-		fs.readFile(file, function (err, data) {
-		  if (err) throw err;
+	for(f in files) {
+		file = files[f];
+		console.log(path.join(process.cwd,'/data/',file));
+		fs.readFile(path.join(process.cwd,'/data/',file), function (err, data) {
+		  
 		  var records = data.split('\n');
 
 		  for(record in records) {

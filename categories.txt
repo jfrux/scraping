@@ -1,0 +1,444 @@
+			
+Abrasives	Abrasives	N-bi1	
+Adhesives, Sealants and Tape	Adhesives, Sealants and Tape	N-bi2	
+Cleaning	Cleaning	N-bi4	
+Electrical	Electrical	N-bi5	
+Electronics, Appliances, and Batteries	Electronics, Appliances, and Batteries	N-cp6	
+Fasteners	Fasteners	N-bi6	
+Fleet and Vehicle Maintenance	Fleet and Vehicle Maintenance	N-cxn	
+Furniture, Hospitality and Food Service	Furniture, Hospitality and Food Service	N-j0r	
+HVAC and Refrigeration	HVAC and Refrigeration	N-k00	
+Hand Tools	Hand Tools	N-bia	
+Hardware	Hardware	N-bib	
+Hydraulics	Hydraulics	N-bic	
+Lighting	Lighting	N-bie	
+Lubrication	Lubrication	N-bif	
+Machining	Machining	N-big	
+Material Handling	Material Handling	N-bih	
+Motors	Motors	N-bii	
+Office Supplies	Office Supplies	N-jkv	
+Outdoor Equipment	Outdoor Equipment	N-bik	
+Paint, Equipment and Supplies	Paint, Equipment and Supplies	N-j7s	
+Plumbing	Plumbing	N-bim	
+Pneumatics	Pneumatics	N-bin	
+Power Tools	Power Tools	N-bio	
+Power Transmission	Power Transmission	N-bip	
+Pumps	Pumps	N-bir	
+Raw Materials	Raw Materials	N-bis	
+Reference and Learning Supplies	Reference and Learning Supplies	N-dai	
+Safety	Safety	N-bit	
+Security	Security	N-biu	
+Test Instruments	Test Instruments	N-biv	
+Welding	Welding	N-bix	
+Abrasive Accessories	Abrasives::Abrasive Accessories	N-h9v	N-bi1
+Abrasive Bands and Rolls	Abrasives::Abrasive Bands and Rolls	N-h9m	N-bi1
+Abrasive Mounted Points	Abrasives::Abrasive Mounted Points	N-ha4	N-bi1
+Abrasive Sharpening Stones	Abrasives::Abrasive Sharpening Stones	N-ha6	N-bi1
+Abrasive Wheels	Abrasives::Abrasive Wheels	N-hap	N-bi1
+Polishing	Abrasives::Polishing	N-hac	N-bi1
+Replacement Parts	Abrasives::Replacement Parts	N-84e	N-bi1
+Sanding Discs and Belts	Abrasives::Sanding Discs and Belts	N-hae	N-bi1
+Sanding Hand Pads and Sponges	Abrasives::Sanding Hand Pads and Sponges	N-in7	N-bi1
+Sandpaper	Abrasives::Sandpaper	N-i9o	N-bi1
+Specialty Abrasives	Abrasives::Specialty Abrasives	N-hfz	N-bi1
+Tumblers and Media	Abrasives::Tumblers and Media	N-hyn	N-bi1
+Caulks	Adhesives, Sealants and Tape::Caulks	N-84g	N-bi2
+Dispensing Guns	Adhesives, Sealants and Tape::Dispensing Guns	N-84l	N-bi2
+Glues and Cements	Adhesives, Sealants and Tape::Glues and Cements	N-84p	N-bi2
+Putties	Adhesives, Sealants and Tape::Putties	N-852	N-bi2
+Tapes	Adhesives, Sealants and Tape::Tapes	N-856	N-bi2
+Thread and Gasket Sealants	Adhesives, Sealants and Tape::Thread and Gasket Sealants	N-85f	N-bi2
+Chemicals	Cleaning::Chemicals	N-86t	N-bi4
+Equipment	Cleaning::Equipment	N-875	N-bi4
+Floor Care	Cleaning::Floor Care	N-87t	N-bi4
+Furniture Care	Cleaning::Furniture Care	N-87z	N-bi4
+Odor Control & Drain Maintainers	Cleaning::Odor Control & Drain Maintainers	N-88v	N-bi4
+Paper Products	Cleaning::Paper Products	N-892	N-bi4
+Personal Care	Cleaning::Personal Care	N-89c	N-bi4
+Rags and Wipes	Cleaning::Rags and Wipes	N-89h	N-bi4
+Receptacles and Containers	Cleaning::Receptacles and Containers	N-89j	N-bi4
+Replacement Parts	Cleaning::Replacement Parts	N-89q	N-bi4
+Restroom Equipment	Cleaning::Restroom Equipment	N-89s	N-bi4
+Supplies	Cleaning::Supplies	N-cq4	N-bi4
+Trash Bags and Liners	Cleaning::Trash Bags and Liners	N-89z	N-bi4
+Conduit	Electrical::Conduit	N-8a1	N-bi5
+Conduit Fittings	Electrical::Conduit Fittings	N-8a2	N-bi5
+Conduit Mounting	Electrical::Conduit Mounting	N-8ae	N-bi5
+Counters and Hour Meters	Electrical::Counters and Hour Meters	N-cr0	N-bi5
+Data and Communication	Electrical::Data and Communication	N-8at	N-bi5
+Distribution	Electrical::Distribution	N-8bl	N-bi5
+Electrical Boxes	Electrical::Electrical Boxes	N-8c2	N-bi5
+Enclosures	Electrical::Enclosures	N-8c9	N-bi5
+Encoders	Electrical::Encoders	N-8ck	N-bi5
+Extension Cords and Outlet Strips	Electrical::Extension Cords and Outlet Strips	N-gqp	N-bi5
+Fuses	Electrical::Fuses	N-8cr	N-bi5
+Ground Fault Protection	Electrical::Ground Fault Protection	N-8d2	N-bi5
+Plugs and Receptacles	Electrical::Plugs and Receptacles	N-8db	N-bi5
+Power Supplies	Electrical::Power Supplies	N-8dr	N-bi5
+Programmable Logic Controllers (PLC)	Electrical::Programmable Logic Controllers (PLC)	N-gs7	N-bi5
+Push Buttons	Electrical::Push Buttons	N-8du	N-bi5
+Raceways	Electrical::Raceways	N-8ea	N-bi5
+Relays	Electrical::Relays	N-8ei	N-bi5
+Safety Switches	Electrical::Safety Switches	N-8ev	N-bi5
+Solar Panels and Accessories	Electrical::Solar Panels and Accessories	N-jlp	N-bi5
+Solenoids	Electrical::Solenoids	N-8f1	N-bi5
+Starters and Contactors	Electrical::Starters and Contactors	N-8f4	N-bi5
+Strain Relief	Electrical::Strain Relief	N-8fl	N-bi5
+Switches	Electrical::Switches	N-8fs	N-bi5
+Temperature Controls	Electrical::Temperature Controls	N-8h0	N-bi5
+Terminal Blocks	Electrical::Terminal Blocks	N-8h5	N-bi5
+Timers	Electrical::Timers	N-8ha	N-bi5
+Transformers	Electrical::Transformers	N-8hj	N-bi5
+Voltage Regulation	Electrical::Voltage Regulation	N-8ho	N-bi5
+Wire Connectors	Electrical::Wire Connectors	N-8hv	N-bi5
+Wire Management	Electrical::Wire Management	N-8i8	N-bi5
+Wire and Cable	Electrical::Wire and Cable	N-8iq	N-bi5
+Wireways	Electrical::Wireways	N-8iz	N-bi5
+Appliances	Electronics, Appliances, and Batteries::Appliances	N-cm3	N-cp6
+Batteries	Electronics, Appliances, and Batteries::Batteries	N-cr7	N-cp6
+Communications	Electronics, Appliances, and Batteries::Communications	N-dal	N-cp6
+Electronics	Electronics, Appliances, and Batteries::Electronics	N-cm5	N-cp6
+Intercoms and Speakers	Electronics, Appliances, and Batteries::Intercoms and Speakers	N-das	N-cp6
+Anchors	Fasteners::Anchors	N-8j2	N-bi6
+Bolts	Fasteners::Bolts	N-8jp	N-bi6
+Hardware	Fasteners::Hardware	N-8ka	N-bi6
+Hooks	Fasteners::Hooks	N-8ki	N-bi6
+Key Stock	Fasteners::Key Stock	N-8kl	N-bi6
+		N-bnu	
+Manuals	Fasteners::Manuals	N-8kr	N-bi6
+Measuring Equipment	Fasteners::Measuring Equipment	N-8kt	N-bi6
+Nails	Fasteners::Nails	N-8kv	N-bi6
+Nuts	Fasteners::Nuts	N-8lb	N-bi6
+Pins	Fasteners::Pins	N-8lx	N-bi6
+Retaining Rings	Fasteners::Retaining Rings	N-8mc	N-bi6
+Rivets	Fasteners::Rivets	N-8mf	N-bi6
+Screws	Fasteners::Screws	N-8mn	N-bi6
+Spacers and Standoffs	Fasteners::Spacers and Standoffs	N-8ng	N-bi6
+Staples	Fasteners::Staples	N-8no	N-bi6
+Thread Insert	Fasteners::Thread Insert	N-8nr	N-bi6
+Washers	Fasteners::Washers	N-8ob	N-bi6
+Automotive Chemicals	Fleet and Vehicle Maintenance::Automotive Chemicals	N-ct1	N-cxn
+Automotive CleaningAppearance	Fleet and Vehicle Maintenance::Automotive CleaningAppearance	N-ct7	N-cxn
+Automotive Diagnostics and Inspection	Fleet and Vehicle Maintenance::Automotive Diagnostics and Inspection	N-kfj	N-cxn
+Automotive Electrical	Fleet and Vehicle Maintenance::Automotive Electrical	N-ctd	N-cxn
+Automotive Exterior	Fleet and Vehicle Maintenance::Automotive Exterior	N-cti	N-cxn
+Automotive Interior	Fleet and Vehicle Maintenance::Automotive Interior	N-cub	N-cxn
+Automotive Lifting Tools	Fleet and Vehicle Maintenance::Automotive Lifting Tools	N-cuj	N-cxn
+Automotive LiftingGarage Equipment	Fleet and Vehicle Maintenance::Automotive LiftingGarage Equipment	N-cus	N-cxn
+Automotive Lubricants	Fleet and Vehicle Maintenance::Automotive Lubricants	N-cv1	N-cxn
+Automotive Maintenance Tools	Fleet and Vehicle Maintenance::Automotive Maintenance Tools	N-cv4	N-cxn
+Automotive Mechanical	Fleet and Vehicle Maintenance::Automotive Mechanical	N-cvh	N-cxn
+Automotive Towing	Fleet and Vehicle Maintenance::Automotive Towing	N-cwm	N-cxn
+Replacement Parts	Fleet and Vehicle Maintenance::Replacement Parts	N-cwx	N-cxn
+Tire and Wheel	Fleet and Vehicle Maintenance::Tire and Wheel	N-k3j	N-cxn
+Bedroom Furniture	Furniture, Hospitality and Food Service::Bedroom Furniture	N-isc	N-j0r
+Exercise Equipment	Furniture, Hospitality and Food Service::Exercise Equipment	N-isi	N-j0r
+Food Service Apparel	Furniture, Hospitality and Food Service::Food Service Apparel	N-ist	N-j0r
+Food Service Appliances and Equipment	Furniture, Hospitality and Food Service::Food Service Appliances and Equipment	N-isz	N-j0r
+Food Service Cookware and Preparation	Furniture, Hospitality and Food Service::Food Service Cookware and Preparation	N-ite	N-j0r
+Food Service Disposables and Dispensers	Furniture, Hospitality and Food Service::Food Service Disposables and Dispensers	N-itp	N-j0r
+Food Service Snack Foods and Condiments	Furniture, Hospitality and Food Service::Food Service Snack Foods and Condiments	N-iuc	N-j0r
+Food Service Storage and Transport	Furniture, Hospitality and Food Service::Food Service Storage and Transport	N-iug	N-j0r
+Food Service Tableware, Bar, and Buffet	Furniture, Hospitality and Food Service::Food Service Tableware, Bar, and Buffet	N-iv0	N-j0r
+Furnishings	Furniture, Hospitality and Food Service::Furnishings	N-ivu	N-j0r
+Furniture	Furniture, Hospitality and Food Service::Furniture	N-iwd	N-j0r
+Guest Room Amenities	Furniture, Hospitality and Food Service::Guest Room Amenities	N-kdc	N-j0r
+Hospitality Uniforms and Workwear	Furniture, Hospitality and Food Service::Hospitality Uniforms and Workwear	N-ix2	N-j0r
+Indoor Furniture	Furniture, Hospitality and Food Service::Indoor Furniture	N-ix8	N-j0r
+Library and School Furniture	Furniture, Hospitality and Food Service::Library and School Furniture	N-ixc	N-j0r
+Luggage Carts and Racks	Furniture, Hospitality and Food Service::Luggage Carts and Racks	N-iyq	N-j0r
+Office Furniture	Furniture, Hospitality and Food Service::Office Furniture	N-iyw	N-j0r
+Outdoor Furniture	Furniture, Hospitality and Food Service::Outdoor Furniture	N-izz	N-j0r
+Pool Access Equipment	Furniture, Hospitality and Food Service::Pool Access Equipment	N-j04	N-j0r
+Recreational Games	Furniture, Hospitality and Food Service::Recreational Games	N-j08	N-j0r
+Replacement Parts	Furniture, Hospitality and Food Service::Replacement Parts	N-j0d	N-j0r
+Team Sports Equipment	Furniture, Hospitality and Food Service::Team Sports Equipment	N-j0f	N-j0r
+AC Refrigeration	HVAC and Refrigeration::AC Refrigeration	N-jn4	N-k00
+Air Conditioners	HVAC and Refrigeration::Air Conditioners	N-jo5	N-k00
+Air Treatment	HVAC and Refrigeration::Air Treatment	N-joq	N-k00
+Blowers	HVAC and Refrigeration::Blowers	N-jp2	N-k00
+Central Equipment	HVAC and Refrigeration::Central Equipment	N-jpt	N-k00
+Exhaust Fans	HVAC and Refrigeration::Exhaust Fans	N-jqf	N-k00
+Fan Blades and Propellers	HVAC and Refrigeration::Fan Blades and Propellers	N-jr8	N-k00
+Fans	HVAC and Refrigeration::Fans	N-jre	N-k00
+Filters	HVAC and Refrigeration::Filters	N-jsl	N-k00
+HVAC Controls	HVAC and Refrigeration::HVAC Controls	N-jtc	N-k00
+HVAC Test Instruments	HVAC and Refrigeration::HVAC Test Instruments	N-jv1	N-k00
+Heating Equipment	HVAC and Refrigeration::Heating Equipment	N-jv8	N-k00
+Pipe and Tubing	HVAC and Refrigeration::Pipe and Tubing	N-jxv	N-k00
+Refrigeration	HVAC and Refrigeration::Refrigeration	N-jxy	N-k00
+Refrigeration Test Equipment	HVAC and Refrigeration::Refrigeration Test Equipment	N-jxz	N-k00
+Replacement Parts	HVAC and Refrigeration::Replacement Parts	N-jye	N-k00
+Roof Ventilators	HVAC and Refrigeration::Roof Ventilators	N-jyg	N-k00
+Roofing	HVAC and Refrigeration::Roofing	N-jyz	N-k00
+Ventilation	HVAC and Refrigeration::Ventilation	N-jz1	N-k00
+Benders	Hand Tools::Benders	N-916	N-bia
+Carpet Tool Kits	Hand Tools::Carpet Tool Kits	N-91c	N-bia
+Clamps	Hand Tools::Clamps	N-91e	N-bia
+Communications Tools	Hand Tools::Communications Tools	N-91v	N-bia
+Conduit, Wire, and Pipe Storage	Hand Tools::Conduit, Wire, and Pipe Storage	N-cx0	N-bia
+Crimping Tools	Hand Tools::Crimping Tools	N-921	N-bia
+Cutting Tools	Hand Tools::Cutting Tools	N-928	N-bia
+Drywall and Plastering Tools	Hand Tools::Drywall and Plastering Tools	N-92x	N-bia
+Electrical Tools	Hand Tools::Electrical Tools	N-934	N-bia
+Files	Hand Tools::Files	N-93f	N-bia
+Hammers and Striking Tools	Hand Tools::Hammers and Striking Tools	N-buu	N-bia
+Hand Saws and Sawhorses	Hand Tools::Hand Saws and Sawhorses	N-c6e	N-bia
+Hand Tool Kits	Hand Tools::Hand Tool Kits	N-941	N-bia
+Inspection and Retrieving Tools	Hand Tools::Inspection and Retrieving Tools	N-946	N-bia
+Marking Tools	Hand Tools::Marking Tools	N-94f	N-bia
+Masonry, Concrete and Tile Tools	Hand Tools::Masonry, Concrete and Tile Tools	N-94l	N-bia
+Measuring and Layout Tools	Hand Tools::Measuring and Layout Tools	N-94x	N-bia
+Pliers	Hand Tools::Pliers	N-96v	N-bia
+Plumbing Equipment	Hand Tools::Plumbing Equipment	N-972	N-bia
+Plumbing Tools	Hand Tools::Plumbing Tools	N-979	N-bia
+Prying Tools	Hand Tools::Prying Tools	N-97i	N-bia
+Pullers and Separators	Hand Tools::Pullers and Separators	N-97l	N-bia
+Punches, Chisels, and Hand Drills	Hand Tools::Punches, Chisels, and Hand Drills	N-i5h	N-bia
+Replacement Parts	Hand Tools::Replacement Parts	N-989	N-bia
+Screwdrivers and Nutdrivers	Hand Tools::Screwdrivers and Nutdrivers	N-98g	N-bia
+Sockets	Hand Tools::Sockets	N-98q	N-bia
+Specialty Safety Tools	Hand Tools::Specialty Safety Tools	N-98y	N-bia
+Staplers, Tackers, and Accessories	Hand Tools::Staplers, Tackers, and Accessories	N-c6j	N-bia
+Tool Storage and Transfer Tanks	Hand Tools::Tool Storage and Transfer Tanks	N-996	N-bia
+Vises	Hand Tools::Vises	N-99m	N-bia
+Wrenches	Hand Tools::Wrenches	N-99q	N-bia
+Clamps	Hardware::Clamps	N-9ae	N-bib
+Hydraulic Seals	Hardware::Hydraulic Seals	N-9aj	N-bib
+Replacement Parts	Hardware::Replacement Parts	N-9an	N-bib
+Supplies	Hardware::Supplies	N-9ap	N-bib
+Hydraulic Filtration	Hydraulics::Hydraulic Filtration	N-c6m	N-bic
+Hydraulic Hoses	Hydraulics::Hydraulic Hoses	N-c6w	N-bic
+Hydraulic Motors	Hydraulics::Hydraulic Motors	N-bri	N-bic
+Hydraulic System Components	Hydraulics::Hydraulic System Components	N-c75	N-bic
+Hydraulic Tools	Hydraulics::Hydraulic Tools	N-ge7	N-bic
+Oil Coolers	Hydraulics::Oil Coolers	N-c7z	N-bic
+Pumps	Hydraulics::Pumps	N-9d6	N-bic
+Replacement Parts	Hydraulics::Replacement Parts	N-9df	N-bic
+Valves	Hydraulics::Valves	N-9ed	N-bic
+Ballasts	Lighting::Ballasts	N-9f8	N-bie
+Emergency Lighting	Lighting::Emergency Lighting	N-ggz	N-bie
+Flashlights	Lighting::Flashlights	N-9g0	N-bie
+Hand and Portable Lamps	Lighting::Hand and Portable Lamps	N-9g9	N-bie
+Hazardous Location Fixtures	Lighting::Hazardous Location Fixtures	N-9gd	N-bie
+Indoor Fixtures	Lighting::Indoor Fixtures	N-9gi	N-bie
+Indoor HID Fixtures	Lighting::Indoor HID Fixtures	N-9gy	N-bie
+Indoor LED Light Fixtures	Lighting::Indoor LED Light Fixtures	N-ilx	N-bie
+Job Site Lighting	Lighting::Job Site Lighting	N-9h4	N-bie
+Lamps	Lighting::Lamps	N-9h9	N-bie
+Light Bulb Related Products	Lighting::Light Bulb Related Products	N-9hk	N-bie
+Outdoor Area Fixtures	Lighting::Outdoor Area Fixtures	N-9hu	N-bie
+Outdoor LED Light Fixtures	Lighting::Outdoor LED Light Fixtures	N-imc	N-bie
+Replacement Parts	Lighting::Replacement Parts	N-9i4	N-bie
+Task Lights	Lighting::Task Lights	N-9i6	N-bie
+Track and Recessed Lighting Fixtures	Lighting::Track and Recessed Lighting Fixtures	N-9id	N-bie
+Fittings	Lubrication::Fittings	N-9ik	N-bif
+Lubricant Storage and Dispensing	Lubrication::Lubricant Storage and Dispensing	N-iif	N-bif
+Lubricants	Lubrication::Lubricants	N-9ip	N-bif
+Lubricators	Lubrication::Lubricators	N-9j2	N-bif
+Machine Fluids	Lubrication::Machine Fluids	N-9ji	N-bif
+Drilling Tools	Machining::Drilling Tools	N-h1j	N-big
+Finishing Supplies	Machining::Finishing Supplies	N-9kk	N-big
+Indexable Inserts	Machining::Indexable Inserts	N-gt2	N-big
+Indexable Tools	Machining::Indexable Tools	N-9m2	N-big
+Machine Cutting Tools	Machining::Machine Cutting Tools	N-c84	N-big
+Machine Fluids	Machining::Machine Fluids	N-9me	N-big
+Machine Tool Accessories	Machining::Machine Tool Accessories	N-9mj	N-big
+Machinery	Machining::Machinery	N-crf	N-big
+Machining Supplies	Machining::Machining Supplies	N-9nx	N-big
+Milling Tools	Machining::Milling Tools	N-h1l	N-big
+Replacement Parts	Machining::Replacement Parts	N-9oh	N-big
+Shop Supplies	Machining::Shop Supplies	N-9oj	N-big
+Tool Holding	Machining::Tool Holding	N-h1o	N-big
+Turning Tools	Machining::Turning Tools	N-h1q	N-big
+Cabinets	Material Handling::Cabinets	N-9ov	N-bih
+Carts and Trucks	Material Handling::Carts and Trucks	N-9p8	N-bih
+Casters and Wheels	Material Handling::Casters and Wheels	N-cnm	N-bih
+Containers	Material Handling::Containers	N-9qd	N-bih
+Conveyors	Material Handling::Conveyors	N-9qi	N-bih
+Dock Equipment	Material Handling::Dock Equipment	N-9r0	N-bih
+Drums	Material Handling::Drums	N-9rl	N-bih
+Hand Trucks	Material Handling::Hand Trucks	N-il0	N-bih
+Hoist and Rigging	Material Handling::Hoist and Rigging	N-k6l	N-bih
+Ladders, Platforms and Scaffolding	Material Handling::Ladders, Platforms and Scaffolding	N-9t8	N-bih
+Lifting Magnets and Suction Cup Lifters	Material Handling::Lifting Magnets and Suction Cup Lifters	N-je7	N-bih
+Mounts and Vibration Control	Material Handling::Mounts and Vibration Control	N-9tt	N-bih
+Packaging and Shipping Products	Material Handling::Packaging and Shipping Products	N-9ty	N-bih
+Racks, Shelving and Workbenches	Material Handling::Racks, Shelving and Workbenches	N-9uq	N-bih
+Ramps	Material Handling::Ramps	N-9vh	N-bih
+Replacement Parts	Material Handling::Replacement Parts	N-9vk	N-bih
+Shop Furniture	Material Handling::Shop Furniture	N-k5z	N-bih
+Storage	Material Handling::Storage	N-9vm	N-bih
+Storage Lockers	Material Handling::Storage Lockers	N-ddg	N-bih
+Structural Framing Systems	Material Handling::Structural Framing Systems	N-9w4	N-bih
+Structures	Material Handling::Structures	N-9w7	N-bih
+Winches	Material Handling::Winches	N-k14	N-bih
+Definite Purpose Motors	Motors::Definite Purpose Motors	N-9ww	N-bii
+General Purpose Motors	Motors::General Purpose Motors	N-9xp	N-bii
+HVAC Motors	Motors::HVAC Motors	N-9xz	N-bii
+Motor Supplies	Motors::Motor Supplies	N-9yh	N-bii
+Replacement Parts	Motors::Replacement Parts	N-9z5	N-bii
+Audio Visual Equipment	Office Supplies::Audio Visual Equipment	N-jew	N-jkv
+Binders and Clipboards	Office Supplies::Binders and Clipboards	N-jf2	N-jkv
+Boards and Easels	Office Supplies::Boards and Easels	N-jfa	N-jkv
+Calendars and Planners	Office Supplies::Calendars and Planners	N-jfw	N-jkv
+Clips, Push Pins, and Rubber Bands	Office Supplies::Clips, Push Pins, and Rubber Bands	N-jg3	N-jkv
+Clocks and Time Cards  Clock Systems	Office Supplies::Clocks and Time Cards  Clock Systems	N-jg9	N-jkv
+Computer Supplies and Media	Office Supplies::Computer Supplies and Media	N-jgg	N-jkv
+Document Covers, Displays, and Frames	Office Supplies::Document Covers, Displays, and Frames	N-jh8	N-jkv
+File Folders and Boxes	Office Supplies::File Folders and Boxes	N-jhi	N-jkv
+Flags, Flag Poles, and Accessories	Office Supplies::Flags, Flag Poles, and Accessories	N-jhp	N-jkv
+Ink and Toner	Office Supplies::Ink and Toner	N-ji0	N-jkv
+Laminating and Binding Equipment	Office Supplies::Laminating and Binding Equipment	N-ji2	N-jkv
+Office Cleaners	Office Supplies::Office Cleaners	N-ji8	N-jkv
+Office Machines and Calculators	Office Supplies::Office Machines and Calculators	N-jie	N-jkv
+Office Organizers	Office Supplies::Office Organizers	N-jip	N-jkv
+Paper and Notebooks	Office Supplies::Paper and Notebooks	N-jj5	N-jkv
+Replacement Parts	Office Supplies::Replacement Parts	N-jjl	N-jkv
+Retail Supplies	Office Supplies::Retail Supplies	N-jjn	N-jkv
+Stamps and Ink Pads	Office Supplies::Stamps and Ink Pads	N-jjy	N-jkv
+Staplers, Tape Dispensers, and Hole Punches	Office Supplies::Staplers, Tape Dispensers, and Hole Punches	N-jk8	N-jkv
+Writing and Correction	Office Supplies::Writing and Correction	N-jkf	N-jkv
+Crop, Nursery, and Landscaping	Outdoor Equipment::Crop, Nursery, and Landscaping	N-a20	N-bik
+Engines	Outdoor Equipment::Engines	N-a25	N-bik
+Forestry	Outdoor Equipment::Forestry	N-d3c	N-bik
+Generators	Outdoor Equipment::Generators	N-a2b	N-bik
+Lawn and Garden	Outdoor Equipment::Lawn and Garden	N-a2r	N-bik
+Outdoor Emergency Response Gear	Outdoor Equipment::Outdoor Emergency Response Gear	N-a4o	N-bik
+Repellants	Outdoor Equipment::Repellants	N-a4q	N-bik
+Replacement Parts	Outdoor Equipment::Replacement Parts	N-a4w	N-bik
+Automotive Paints and Coatings	Paint, Equipment and Supplies::Automotive Paints and Coatings	N-j58	N-j7s
+Brushes, Rollers, and Trays	Paint, Equipment and Supplies::Brushes, Rollers, and Trays	N-j5f	N-j7s
+Exterior Paints and Stains	Paint, Equipment and Supplies::Exterior Paints and Stains	N-j5s	N-j7s
+Interior Paints and Stains	Paint, Equipment and Supplies::Interior Paints and Stains	N-j5v	N-j7s
+Paint Booths and Accessories	Paint, Equipment and Supplies::Paint Booths and Accessories	N-j5y	N-j7s
+Paint Mixers, Shakers, and Accessories	Paint, Equipment and Supplies::Paint Mixers, Shakers, and Accessories	N-j64	N-j7s
+Paint Sprayers and Accessories	Paint, Equipment and Supplies::Paint Sprayers and Accessories	N-j69	N-j7s
+Paint and Wallpaper Tools	Paint, Equipment and Supplies::Paint and Wallpaper Tools	N-j6v	N-j7s
+Replacement Parts	Paint, Equipment and Supplies::Replacement Parts	N-j71	N-j7s
+Specialty Paints, Coatings, and Additives	Paint, Equipment and Supplies::Specialty Paints, Coatings, and Additives	N-j73	N-j7s
+Spray Paints and Primers	Paint, Equipment and Supplies::Spray Paints and Primers	N-j7h	N-j7s
+Surface Protection and Dust Barriers	Paint, Equipment and Supplies::Surface Protection and Dust Barriers	N-j7m	N-j7s
+Bathroom Hardware	Plumbing::Bathroom Hardware	N-a67	N-bim
+Buriable Gas	Plumbing::Buriable Gas	N-a6l	N-bim
+Drains	Plumbing::Drains	N-a6q	N-bim
+Filtration	Plumbing::Filtration	N-a70	N-bim
+Fittings	Plumbing::Fittings	N-a7p	N-bim
+Fixtures	Plumbing::Fixtures	N-a8z	N-bim
+Floor and Ceiling Tiles	Plumbing::Floor and Ceiling Tiles	N-ka9	N-bim
+Gas and Water Line Connectors	Plumbing::Gas and Water Line Connectors	N-a91	N-bim
+Gaskets	Plumbing::Gaskets	N-a95	N-bim
+Hoses	Plumbing::Hoses	N-a97	N-bim
+Pipe and Tubing	Plumbing::Pipe and Tubing	N-a9e	N-bim
+Pond Aeration	Plumbing::Pond Aeration	N-aak	N-bim
+Replacement Parts	Plumbing::Replacement Parts	N-aam	N-bim
+Sinks and Fountains	Plumbing::Sinks and Fountains	N-aaq	N-bim
+Strainers	Plumbing::Strainers	N-ab2	N-bim
+ToiletsUrinals	Plumbing::ToiletsUrinals	N-ab5	N-bim
+TubFaucets	Plumbing::TubFaucets	N-abd	N-bim
+Valves	Plumbing::Valves	N-abo	N-bim
+Waste Disposers	Plumbing::Waste Disposers	N-adj	N-bim
+Waste Water Hangers	Plumbing::Waste Water Hangers	N-cyf	N-bim
+Water Heaters	Plumbing::Water Heaters	N-adm	N-bim
+Water Treatment	Plumbing::Water Treatment	N-ae0	N-bim
+Air Compressor Accessories	Pneumatics::Air Compressor Accessories	N-ae4	N-bin
+Air Compressors and Vacuum Pumps	Pneumatics::Air Compressors and Vacuum Pumps	N-aep	N-bin
+Compressed Air Treatment	Pneumatics::Compressed Air Treatment	N-c94	N-bin
+Distribution Equipment	Pneumatics::Distribution Equipment	N-afj	N-bin
+Hose Clamps	Pneumatics::Hose Clamps	N-afr	N-bin
+Hose Reels	Pneumatics::Hose Reels	N-afz	N-bin
+Hoses	Pneumatics::Hoses	N-ag5	N-bin
+Pneumatic Motors	Pneumatics::Pneumatic Motors	N-brl	N-bin
+Pneumatic System Components	Pneumatics::Pneumatic System Components	N-c9e	N-bin
+Pneumatic Tools	Pneumatics::Pneumatic Tools	N-agt	N-bin
+Replacement Parts	Pneumatics::Replacement Parts	N-ahr	N-bin
+Valves	Pneumatics::Valves	N-aif	N-bin
+Cordless Tools	Power Tools::Cordless Tools	N-aiw	N-bio
+Demolition Tools and Equipment	Power Tools::Demolition Tools and Equipment	N-ink	N-bio
+Drain Cleaning Equipment	Power Tools::Drain Cleaning Equipment	N-aj5	N-bio
+Drilling Accessories	Power Tools::Drilling Accessories	N-aj9	N-bio
+Fastening Tool Accessories	Power Tools::Fastening Tool Accessories	N-akp	N-bio
+Fastening Tools	Power Tools::Fastening Tools	N-aks	N-bio
+Finishing Tools	Power Tools::Finishing Tools	N-al7	N-bio
+Heat Guns	Power Tools::Heat Guns	N-amg	N-bio
+Masonry	Power Tools::Masonry	N-amj	N-bio
+Pipe Threading Equipment	Power Tools::Pipe Threading Equipment	N-aml	N-bio
+Power Drills	Power Tools::Power Drills	N-ca0	N-bio
+Power Saws and Accessories	Power Tools::Power Saws and Accessories	N-cah	N-bio
+Power Shears	Power Tools::Power Shears	N-cbu	N-bio
+Replacement Parts	Power Tools::Replacement Parts	N-amt	N-bio
+Routers	Power Tools::Routers	N-amv	N-bio
+Tool Storage	Power Tools::Tool Storage	N-aoh	N-bio
+Bearings	Power Transmission::Bearings	N-aoj	N-bip
+Brakes and Clutches	Power Transmission::Brakes and Clutches	N-apq	N-bip
+Bushings	Power Transmission::Bushings	N-apv	N-bip
+Chain and Tools	Power Transmission::Chain and Tools	N-aq0	N-bip
+Couplings, Collars, and Adapters	Power Transmission::Couplings, Collars, and Adapters	N-cl9	N-bip
+Gearing	Power Transmission::Gearing	N-aqi	N-bip
+Gearmotors	Power Transmission::Gearmotors	N-aql	N-bip
+Linear Motion	Power Transmission::Linear Motion	N-ckr	N-bip
+Power Transmission Belts	Power Transmission::Power Transmission Belts	N-cby	N-bip
+		N-aqv	
+		N-aqx	
+Sheaves and Pulleys	Power Transmission::Sheaves and Pulleys	N-aqz	N-bip
+Speed Reducers	Power Transmission::Speed Reducers	N-ar5	N-bip
+Sprockets	Power Transmission::Sprockets	N-arc	N-bip
+Tensioners and Tighteners	Power Transmission::Tensioners and Tighteners	N-c04	N-bip
+Vibrators	Power Transmission::Vibrators	N-arl	N-bip
+Aeration	Pumps::Aeration	N-boo	N-bir
+Centrifugal Pumps	Pumps::Centrifugal Pumps	N-hsq	N-bir
+Chemical Pumps	Pumps::Chemical Pumps	N-hta	N-bir
+Condensate Pumps	Pumps::Condensate Pumps	N-htj	N-bir
+Coolant Pumps	Pumps::Coolant Pumps	N-at5	N-bir
+Diaphragm Pumps	Pumps::Diaphragm Pumps	N-htn	N-bir
+Drum and Barrel Pumps	Pumps::Drum and Barrel Pumps	N-hts	N-bir
+		N-atj	
+Engine Driven Pumps	Pumps::Engine Driven Pumps	N-atl	N-bir
+Filtration	Pumps::Filtration	N-atr	N-bir
+Flexible Impeller Pumps	Pumps::Flexible Impeller Pumps	N-hty	N-bir
+Fuel and Oil Transfer Pumps	Pumps::Fuel and Oil Transfer Pumps	N-hu1	N-bir
+Hot Water Circulating Pumps	Pumps::Hot Water Circulating Pumps	N-hu5	N-bir
+Machine Tool and Parts Washer Pumps	Pumps::Machine Tool and Parts Washer Pumps	N-hu9	N-bir
+Marine and RV Pumps	Pumps::Marine and RV Pumps	N-hud	N-bir
+PistonProgressive CavityRoller Spray	Pumps::PistonProgressive CavityRoller Spray	N-aue	N-bir
+Pond Accessories	Pumps::Pond Accessories	N-auj	N-bir
+Pool and Spa Pumps	Pumps::Pool and Spa Pumps	N-huh	N-bir
+Pump Accessories	Pumps::Pump Accessories	N-auy	N-bir
+Pump Controls	Pumps::Pump Controls	N-cc3	N-bir
+Pump Replacement Parts	Pumps::Pump Replacement Parts	N-huu	N-bir
+Rotary Pumps	Pumps::Rotary Pumps	N-gwo	N-bir
+Sump, Effluent and Sewage Pumps	Pumps::Sump, Effluent and Sewage Pumps	N-huw	N-bir
+Test Pumps	Pumps::Test Pumps	N-gqb	N-bir
+Well Pumps	Pumps::Well Pumps	N-hve	N-bir
+Alloy Steel	Raw Materials::Alloy Steel	N-awk	N-bis
+Aluminum	Raw Materials::Aluminum	N-awo	N-bis
+		N-gw5	
+Brass	Raw Materials::Brass	N-awt	N-bis
+Carbon Steel	Raw Materials::Carbon Steel	N-aww	N-bis
+Cast Iron	Raw Materials::Cast Iron	N-ax3	N-bis
+Ceramic	Raw Materials::Ceramic	N-bpn	N-bis
+Copper	Raw Materials::Copper	N-ax5	N-bis
+Cork	Raw Materials::Cork	N-bmj	N-bis
+Felt	Raw Materials::Felt	N-ax8	N-bis
+Fiberglass	Raw Materials::Fiberglass	N-axc	N-bis
+Foam	Raw Materials::Foam	N-dct	N-bis
+Plastics	Raw Materials::Plastics	N-axo	N-bis
+Rubber	Raw Materials::Rubber	N-ay4	N-bis
+Stainless Steel	Raw Materials::Stainless Steel	N-ay9	N-bis
+		N-deg	
+Tool Steel	Raw Materials::Tool Steel	N-k1l	N-bis
+Vinyl	Raw Materials::Vinyl	N-hob	N-bis
+Wire Cloth	Raw Materials::Wire Cloth	N-ayd	N-bis
+Books and Books Supplies	Reference and Learning Supplies::Books and Books Supplies	N-d47	N-dai
+Classroom Supplies	Reference and Learning Supplies::Classroom Supplies	N-d4r	N-dai
+Decoration	Reference and Learning Supplies::Decoration	N-d5v	N-dai
+Incentive	Reference and Learning Supplies::Incentive	N-d6n	N-dai
+Science	Reference and Learning Supplies::Science	N-d8e	N-dai
+Arc Flash Protection	Safety::Arc Flash Protection	N-ayt	N-bit
+Confined Space Equipment	Safety::Confined Space Equipment	N-hj5	N-bit
+Disposable and Chemical Resistant Clothing	Safety::Disposable and Chemical Resistant Clothing	N-iol	N-bit
+Emergency Eyewash and Shower Equipment	Safety::Emergency Eyewash and Shower Equipment	N-gta	N-bit
+Emergency Preparedness	Safety::Emergency Preparedness	N-boa	N-bit
+Ergonomics	Safety::Ergonomics	N-azg	N-bit
+Eye Protection and Accessories	Safety::Eye Protection and Accessories	N-k1q	N-bit
+Face Protection	Safety::Face Protection	N-azq	N-bit

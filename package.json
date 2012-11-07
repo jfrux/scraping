@@ -3,6 +3,8 @@
 	"version":"0.0.0",
 	"dependencies":{
 		"async":"",
+		"jsdom":"",
+		"http-agent":"",
 		"scraper":"",
 		"dateformat":"",
 		"underscore":"",
