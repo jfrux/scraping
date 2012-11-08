@@ -5,6 +5,8 @@
 		"async":"",
 		"jsdom":"",
 		"http-agent":"",
+		"colorize":"",
+		"mongoose":"",
 		"scraper":"",
 		"dateformat":"",
 		"underscore":"",
