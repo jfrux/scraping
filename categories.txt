@@ -1,3 +1,4 @@
+name	textpath	key	link	hassubcats	hasproducts	parentkey
 Abrasives	Home:Abrasives	N-bi1	http://www.grainger.com/Grainger/abrasives/ecatalog/N-bi1	true	false	
 Adhesives, Sealants and Tape	Home:Adhesives, Sealants and Tape	N-bi2	http://www.grainger.com/Grainger/adhesives-sealants-and-tape/ecatalog/N-bi2	true	false	
 Cleaning	Home:Cleaning	N-bi4	http://www.grainger.com/Grainger/cleaning/ecatalog/N-bi4	true	false	
