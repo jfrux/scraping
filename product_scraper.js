@@ -10,16 +10,17 @@ var db = mysql.createConnection({
   password : 'cfr010408',
   database : 'ojects'
 });
-
-db.connect();
-db.query('SELECT * FROM ojects.categories WHERE hasproducts = \'true\' ORDER BY textpath LIMIT 6000', function(err,rows,fields) {
-  console.log(rows);
   var agent = httpAgent.create('www.grainger.com');
-  //start url
-  agent.addUrl('Grainger/wwg/start.shtml');
 
-  var $basecats = '';
-  var regexp = new RegExp("(N\-[a-zA-Z0-9]+)");
+var regexp = new RegExp("(N\-[a-zA-Z0-9]+)");
+db.connect();
+db.query('SELECT * FROM ojects.categories WHERE hasproducts = \'true\' ORDER BY textpath LIMIT 100', function(err,rows,fields) {
+  
+  for(row in rows) {
+    //start url
+    agent.addUrl(rows[row].link);
+  }
+
   var selector = {
     'productlist':'.esr_itemListBody > input',
     'productimg':'td:nth-child(2) img',
@@ -41,19 +42,26 @@ db.query('SELECT * FROM ojects.categories WHERE hasproducts = \'true\' ORDER BY 
     }
   }
 
-  // function writeProduct(item) {
-  //   var prod = new Product(item);
-  //   log("Saving Product",item.name);
-
-  //   prod.save(function (err) {
-  //     if (err) {
-  //       return log('error',err);
-  //     } // TODO handle the error
-
-  //     log('Saved Product',item.name);
-  //     agent.emit('productLoaded',null,prod);
+  function writeProduct(item) {
+  log("comment","Push category...");
+  var output = [
+    item.key,
+    item.name,
+    item.price,
+    item.img,
+    item.catkey
+  ];
+  // if(item.parentkey.trim().length) {
+  //   //has parent, lookup...
+  //   Category.findOne({ 'key': item.parentkey }, function (err, cat) {
+  //     save(cat);
   //   });
+  // } else {
+  //   save(null);
   // }
+
+  fs.appendFileSync('./products.txt',output.join('\t') + '\n');
+}
 
   agent.addListener('start',function(e,agent) {
     console.log(agent);
@@ -64,6 +72,7 @@ db.query('SELECT * FROM ojects.categories WHERE hasproducts = \'true\' ORDER BY 
   });
   agent.addListener('next', function (e, agent) {
     log("Rendering",agent.url);
+    var catkey = regexp.exec(agent.url)[0];
     // if (addPage) {
     //   // The agent will now also visit 'http://graph.facebook.com/yahoo'
     //   agent.addUrl('yahoo');
@@ -81,55 +90,11 @@ db.query('SELECT * FROM ojects.categories WHERE hasproducts = \'true\' ORDER BY 
       // jQuery is now loaded on the jsdom window created from 'agent.body'
       
       //basecats
-      
         //current page
-        var bctitle = $(".productsFoundText").justtext().replace(new RegExp('\/','gi'),'').trim();
-        var bclinks = $.map($('.productsFoundText a'),$.text);
-        bclinks.push(bctitle);
-        bclinks = $.map(bclinks,function(link) {
-          if(link.trim().length) {
-            return link.trim();
-          }
-        });
-
-        var hasSubCats = ($(selector.catlist).text().trim() == 'Browse');
-        var hasProducts = ($(selector.productlist).length > 0);
-        if(regexp.exec(agent.url)) {
-          var catKey = regexp.exec(agent.url)[0];  
-        } else {
-          var catKey = '';
-        }
-        
-        var parentCat = $(".productsFoundText a:last");
-        if(regexp.test($(parentCat).attr('href'))) {
-          var parentCatKey = regexp.exec($(parentCat).attr('href'))[0];
-        } else {
-          var parentCatKey = '';
-        }
-        
-        var curr_cat = {
-          'name':bctitle,
-          'textpath':bclinks,
-          'key':catKey,
-          'link':agent.url,
-          'hassubcats':hasSubCats,
-          'hasproducts':hasProducts,
-          'parentkey':parentCatKey
-        };
-
-        log("Parsed Category",curr_cat.textpath);
-        
-        if(err) return false;
-          
-          var breadcrumbs = bclinks;
-          var title = bctitle;
-
-          
-          log("Started","Scraping " + newcat.name);
-
           //products
-          if(hasProducts) {
-            log("comment",newcat.name + '\t' + 'Has products list...');
+          console.log($(selector.productlist).length);
+          if($(selector.productlist).length > 0) {
+            console.log("HAS PRODUCTS");
             if($(selector.nextPageLink).attr('href')) {
               var nextLink = $(selector.nextPageLink).attr('href');
             }
@@ -143,13 +108,8 @@ db.query('SELECT * FROM ojects.categories WHERE hasproducts = \'true\' ORDER BY 
                 'name':$product.find(selector.productname).text(),
                 'price':$product.find(selector.productprice).text(),
                 'img':'http:' + $product.find(selector.productimg).attr('src'),
-                'cat':newcat.key,
-                '_cat':newcat._id
+                'catkey':catkey
               };
-
-              agent.once("productLoaded",function(err,curr_prod) {
-
-              });
 
               log("Found Product",product.name);
               writeProduct(product);
@@ -163,11 +123,8 @@ db.query('SELECT * FROM ojects.categories WHERE hasproducts = \'true\' ORDER BY 
           }
 
           window.close();
-          log("Completed","Scraping " + newcat.name);
+          log("Completed","Scraping " + agent.url);
           agent.next();
-        
-        writeCategory(curr_cat);
-     
     });
   });
 
