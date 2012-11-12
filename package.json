@@ -6,9 +6,12 @@
 		"jsdom":"",
 		"http-agent":"",
 		"colorize":"",
+		"measured":"",
 		"mongoose":"",
+		"batches":"",
 		"scraper":"",
 		"dateformat":"",
+		"charm":"",
 		"underscore":"",
 		"mysql":"2.0.0-alpha3"
 	}
