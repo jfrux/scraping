@@ -190,7 +190,7 @@ writeProducts(products,function() {
     agent.start();
   }
 
-db.query('SELECT * FROM ojects.categories WHERE hasproducts=\'true\' ORDER BY textpath LIMIT 3225,5800', function(err,rows,fields) {
+db.query('SELECT * FROM ojects.categories WHERE hasproducts=\'true\' ORDER BY textpath LIMIT 3225,1000', function(err,rows,fields) {
   var baseUrls = [];
   
   for(row in rows) {
